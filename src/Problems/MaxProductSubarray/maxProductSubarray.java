@@ -2,15 +2,15 @@ package Problems.MaxProductSubarray;
 
 public class maxProductSubarray {
     public static void main(String[] args) {
-        int [] nums = {-2,3,-4,5,-6,0,-7};
+        int[] nums = {-2, 3, -4, 5, -6, 0, -7};
         Solution sol = new Solution();
         int res = sol.maxProduct(nums);
-
-
+        System.out.println(res);
     }
 }
 
 class Solution {
+
     public int maxProduct(int[] nums) {
         int curMax = nums[0];
         int curMin = nums[0];
@@ -23,8 +23,8 @@ class Solution {
                 continue;
             }
             int tmp = x * curMax;
-            curMax = max(x,max(x * curMin, tmp));
-            curMin = min(x,min(tmp, x * curMin));
+            curMax = max(x, max(x * curMin, tmp));
+            curMin = min(x, min(tmp, x * curMin));
             res = max(res, curMax);
         }
         return res;
