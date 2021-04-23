@@ -1,6 +1,6 @@
 package Problems.MaxProductSubarray;
 
-public class maxProductSubarray {
+public class MaxProductSubarray {
     public static void main(String[] args) {
         int[] nums = {-2, 3, -4, 5, -6, 0, -7};
         Solution sol = new Solution();

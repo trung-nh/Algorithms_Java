@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class combiSumII {
+public class CombiSumII {
 	public static void main(String[] args) {
 		Solution sol = new Solution();
 		int[] candidates = {1, 1, 2, 3, 5};

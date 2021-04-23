@@ -1,3 +1,1 @@
-# Algorithms
-# Leetcode
-# Java
+# Leetcode algorithms in Java 
